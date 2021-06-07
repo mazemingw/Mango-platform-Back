@@ -1,0 +1,25 @@
+# tomcat
+server:
+  port: 8002
+spring:
+  application:
+    name: mango-backup
+    
+boot:
+    admin:
+      client:
+        url: "http://127.0.0.1:8000"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    
+# backup datasource
+mango:
+  backup:
+    datasource:
+      host: 8.129.80.199
+      userName: root
+      password: 1913154529zx
+      database: iotlink
